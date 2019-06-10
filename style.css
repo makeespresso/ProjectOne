@@ -1,3 +1,19 @@
 /* FontColorPallete 
 https://creativemarket.com/jenwagnerco/3494054-Capri-A-Serif-Sans-Font-Duo?u=jenwagnerco&utm_source=Pinterest&utm_medium=CM+Social+Share&utm_campaign=Category+Social+Share&utm_content=Sans+Serif+Fonts+%7E+Creative+Market&ts=201902&pp=0&epik=dj0yJnU9VVlzM3RJM2pENng0aTFTdURIdl9vRTBQMXdXZnBhUGcmbj11cmo2REpZWkZBU2p3UmZJaWtMNm9BJnQ9QUFBQUFGejZ2elk
 */
+/* Boiler Plate: https://paulund.co.uk/boilerplate-css-media-queries*/  
+#nav-wrapper{
+  background: lightblue;
+  height: 55px;;
+}
+
+.grid-container {
+  background: lightgray;
+}
+
+#grid-item{
+  background: lightcyan;
+  height: 300px;
+  width: 250px;
+  display: inline-block;
+}
