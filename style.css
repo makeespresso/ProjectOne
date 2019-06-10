@@ -2,18 +2,33 @@
 https://creativemarket.com/jenwagnerco/3494054-Capri-A-Serif-Sans-Font-Duo?u=jenwagnerco&utm_source=Pinterest&utm_medium=CM+Social+Share&utm_campaign=Category+Social+Share&utm_content=Sans+Serif+Fonts+%7E+Creative+Market&ts=201902&pp=0&epik=dj0yJnU9VVlzM3RJM2pENng0aTFTdURIdl9vRTBQMXdXZnBhUGcmbj11cmo2REpZWkZBU2p3UmZJaWtMNm9BJnQ9QUFBQUFGejZ2elk
 */
 /* Boiler Plate: https://paulund.co.uk/boilerplate-css-media-queries*/  
-#nav-wrapper{
-  background: lightblue;
-  height: 55px;;
-}
+body {
+  font-size: 16px;
+  margin: 0 auto;
+  }
 
-.grid-container {
-  background: lightgray;
-}
+  /* NAV SECTION */
 
-#grid-item{
-  background: lightcyan;
-  height: 300px;
-  width: 250px;
+/* SECTION */
+
+/* ARTICLES */
+#theDiv {
   display: inline-block;
+  border: solid black 2px;
+}
+.theTitle {
+  font-size: 1.5em;
+  margin-bottom: -10px;
+  background: green;
+}
+.theAuthor{
+  color: blue;
+  font-size: 1em;
+}
+.theDescription{
+  color: green;
+}
+
+#NewsDisplay{
+  height: 200px;;
 }
