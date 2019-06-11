@@ -11,16 +11,16 @@ const render = async () => {
   const resp = await axios(url)
   //RECEIVES DATA
   const { articles } = resp.data;
-  //YOU GET AN ARRAY AND WE CYCLE TROUGH IT
+  //GET AN ARRAY AND CYCLE TROUGH IT
   for (let i = 0; i < articles.length; i++) {
     //RETRIVING THE DATA FROM THE ARRAY BY NUMBER
     let { title, author, description, urlToImage, url } = articles[i]
-    //CREATING THE RENDER DIV FOR EACH ARTICLE with the class as card
+    //CREATING THE RENDER DIV FOR EACH ARTICLE WITH THE CLASS AS "CARD"
     let article = document.createElement('div')
     article.setAttribute("class", "card")
     //ANEXING THAT DIV TO THE DOM
     newsDisplay.appendChild(article);
-    // DIV INNER HTML CODE
+    // DIV INNER HTML CODE & CREATED HTML ELEMENTS
     article.innerHTML = `
     <a href="${url}">
       <img class="image" src="${urlToImage}" alt="${title}"/>    
@@ -31,4 +31,5 @@ const render = async () => {
         `
   }
 }
+//DISPLAYS THE INFORMATION ON THE WEBSITE/CONSOLE
 render();

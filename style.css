@@ -1,73 +1,23 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-#NewsDisplay{
-  display: flex;
-  flex-flow: row wrap;
-}
-.card{
-  background-color: gray;
-  height: auto;
-  width: 40vw;
-  border-radius: 25px;
-  padding-bottom: 3vh;
-  margin: 3%;
-}
-a{
-  /*TODO: CLEAN THE a TAG DECORATION*/
-}
-div h2{
-  color:red;
-  size: 2.5rem;
-}
-div small{
-  color :blue;
-  size: 1rem;
-}
-div p {
-  color: green;
-  size: 1.6rem;
-}
-div img{
-  border-radius: 25px 25px 0 0;
-  max-width: 40vw;
-  background-color: purple;
-}
-
 /* FontColorPallete 
 https://creativemarket.com/jenwagnerco/3494054-Capri-A-Serif-Sans-Font-Duo?u=jenwagnerco&utm_source=Pinterest&utm_medium=CM+Social+Share&utm_campaign=Category+Social+Share&utm_content=Sans+Serif+Fonts+%7E+Creative+Market&ts=201902&pp=0&epik=dj0yJnU9VVlzM3RJM2pENng0aTFTdURIdl9vRTBQMXdXZnBhUGcmbj11cmo2REpZWkZBU2p3UmZJaWtMNm9BJnQ9QUFBQUFGejZ2elk
 */
 /* Boiler Plate: https://paulund.co.uk/boilerplate-css-media-queries*/  
-/* *{
+
+/*HTML*/
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-body{
-  background: lightseagreen;
-}
+
 html{
   font-size: 14px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-a{
-  text-decoration: none;
-  color: peru;
-  font-weight: 500;
-  font-size: 1.2em;
+
+body{
+  background: whitesmoke;
 }
-header{
-  width: 100%;
-  height: 15vh;
-  background:rgb(2512 206 55);
-  position: fixed;
-}
-.container{
-  max-width: 120rem;
-  width: 90%;
-  margin: 0 auto;
-}
+
+/* NAV - MENU */
 nav{
   padding-top: 2rem;
   display: flex;
@@ -98,41 +48,109 @@ color: rgb(45,64,84);
 font-size: 2rem;
 font-family: 'Playfair Display', serif;
 font-weight: 800;
-/* background: blanchedalmond; */
-/* text-transform: uppercase;
-} */ 
+text-transform: uppercase;
+}
 
-/* BREAK DIV */
-/* .break{
-  background: lightseagreen;
-  height: 115px;
-} */
-/* ARTICLES CONTAINER*/
-/* .articlesSection{
-  background: lavender;
-} */
+#socialImg{
+  height: 25px;
+  width: 25px;
+}
 
-/* #NewsDisplay{
-  display: grid;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-  border: solid black 2px;
-} */
 /* ARTICLES */
-/* .theTitle {
-  font-size: 2em;
-  flex-wrap: wrap;
+
+#NewsDisplay{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card{
+  background-color: whitesmoke;
+  border: solid black 3px;
+  height: auto;
+  width: 40vw;
+  /* border-radius: 25px; */
+  padding-bottom: 3vh;
+  margin: 3%;
+}
+
+a{
+  text-decoration: none;
+}
+/* a:hover { 
+  background-color: black;
+  color: whitesmoke;
+} */
+
+div h2{
+  size: 2.5rem;
+}
+.theTitle{
+  color: black;
+  font-family: 'Old Standard TT', serif;
+  margin: 5px;
+}
+div h2:hover{
+  background-color: black;
+  color:whitesmoke;
+}
+
+div small{
+background-color: blue;
+height: 2vh;
+padding: 10px;
 }
 .theAuthor{
-  color: blue;
-  font-size: 1em;
+  float: right;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Muli', sans-serif;
+
 }
+div p {
+  margin: 5px;
+}
+
 .theDescription{
-  color: green;
+  color:rgb(63, 63, 63);
+  font-family: 'Muli', sans-serif;
+  size: 2rem;
+  text-align: left;
 }
-#NewsDisplay{
-  height: 200px;;
-} */
 
+div img{
+  /* border-radius: 25px 25px 0 0; */
+  max-width: 40vw;
+}
+ 
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.2em;
+}
 
+header{
+  width: 100%;
+  height: 15vh;
+  background:rgb(2512 206 55);
+  position: fixed;
+}
 
+.container{
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+footer{
+  height: 55px;
+  background: black;
+}
+
+footer p{
+  color: white;
+  text-align: center;
+align-content: center;
+font-size: 1em;
+}
