@@ -4,19 +4,31 @@ const url = 'https://newsapi.org/v2/top-headlines?' +
   'apiKey=d0190f801c9d4d15bcb290d963b59d39';
 
 const newsDisplay = document.querySelector("#NewsDisplay")
+// newsDisplay = (title, author, description);
 
 const render = async () => {
+  //REQUEST INFO
   const resp = await axios(url)
+  //RECEIVES DATA
   const { articles } = resp.data;
+  //YOU GET AN ARRAY AND WE CYCLE TROUGH IT
   for (let i = 0; i < articles.length; i++) {
-    let { title, author, description, urlToImage } = articles[i]
+    //RETRIVING THE DATA FROM THE ARRAY BY NUMBER
+    let { title, author, description, urlToImage, url } = articles[i]
+    //CREATING THE RENDER DIV FOR EACH ARTICLE with the class as card
     let article = document.createElement('div')
+    article.setAttribute("class", "card")
+    //ANEXING THAT DIV TO THE DOM
     newsDisplay.appendChild(article);
-    article.innerHTML = `    
-          <p class="theTitle">${title}</p>
-          <p class="theAuthor">${author}<p>
-          <p class="theDescription">${description}</p>
-          `
+    // DIV INNER HTML CODE
+    article.innerHTML = `
+    <a href="${url}">
+      <img class="image" src="${urlToImage}" alt="${title}"/>    
+      <h2 class="theTitle">${title}</h2>
+    </a>
+      <small class="theAuthor">${author}</small>
+      <p class="theDescription">${description}</p>
+        `
   }
 }
 render();
