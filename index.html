@@ -4,19 +4,24 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
+<link rel="icon" href="img/favicon.ico">
 <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Project 1</title>
+  <title>viewport</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="script.js"></script>
+  <!-- FONTS HERE-->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli|Old+Standard+TT&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
   <!--<script src="" async defer></script> -->
 </head>
 
@@ -37,10 +42,28 @@
       </nav>
     </div>
   </header>
+  <img src="img/piramid.jpeg" id="cover-img">
+
+  <div id="headline">
+    <h2>Today on VP</h2>
+    <p><span id="datetime"></span></p>
+  </div>
   <div id="NewsDisplay"> </div>
+  <img src="img/sqline.svg" class="squiggly-line" alt="Squiggly Line">
+  
+  <section class="editorsPicks">
+    <h1>Search News</h1>
+    <form id="searchBar">
+      <input type="text" placeholder="...">
+    </form>
+  </section>
   <footer>
-    <p>Makeespresso, 2019 &hearts;</p>
+    <p><a href="https://github.com/makeespresso" alt="Makeespresso"></a>Makeespresso <span>&hearts;</span></p>
   </footer>
+  <script>
+    let dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+  </script>
 </body>
 
 </html>
