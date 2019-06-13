@@ -1,8 +1,14 @@
-<h2>Viewport</h2>
+<h1>Viewport</h1>
+
 <p> This is an API powered news site using https://newsapi.org/.</p>
 
 <h3>Deployment</h3>
 [Surge](https://surge.sh/)
+
+<h3>Running the code</h3>
+
+<p>Fork this repository</p>
+<p> Clone it in your Github and open it using the terminal</p>
 
 <h3>Built With</h3>
 Javascript
@@ -14,7 +20,7 @@ CSS
 Ana Silvia
 
 <h3>Acknowledgments</h3>
-Squad 1: Maddy & David!
+Squad: Maddy & David!
 
 <h3>Low-fi Wireframes<h3>
 
