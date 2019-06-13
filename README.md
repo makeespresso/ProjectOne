@@ -1,4 +1,4 @@
-##Viewport
+<h1>Viewport</h1>
 <p> This is an API powered news site using https://newsapi.org/.</p>
 
 <h3>Getting Started
