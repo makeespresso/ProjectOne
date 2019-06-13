@@ -1,25 +1,22 @@
-<h1>Viewport</h1>
+<h2>Viewport</h2>
 <p> This is an API powered news site using https://newsapi.org/.</p>
 
-<h3>Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-<h2>Deployment</h2>
+<h3>Deployment</h3>
 [Surge](https://surge.sh/)
 
-<h2>Built With</h2>
+<h3>Built With</h3>
 Javascript
 HTML
 CSS
 [API](https://newsapi.org/)
 
-<h2>Authors</h2>
+<h3>Authors</h3>
 Ana Silvia
 
-<h2>Acknowledgments</h2>
+<h3>Acknowledgments</h3>
 Squad 1: Maddy & David!
 
-<h2>Low-fi Wireframes<h2>
+<h3>Low-fi Wireframes<h3>
 
 ![IMG_3060](https://user-images.githubusercontent.com/20978259/59401685-89883b80-8d69-11e9-920f-8192f658cf10.JPG)
 
