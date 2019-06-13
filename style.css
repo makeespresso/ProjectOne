@@ -163,8 +163,9 @@ a{
 
 header{
    width: 100vw;
-    height: 7rem;
-    background: rgb(2512 206 55);
+    height: 10vh;
+    background-color: rgb(251 206 55);
+    /* fill: rgb(2512 206 55); */
     position: fixed;
 }
 
@@ -177,8 +178,8 @@ header{
 /*NO NEWS IMG*/
 .spaceCat{
 mask-repeat: no-repeat;
-max-width: 30%;
-max-height: 30%;
+max-width: 90vw;
+object-fit: scale-down;
 }
 
 /*SEARCH NEWS*/
@@ -218,17 +219,3 @@ footer p{
 footer p span{
   color: palevioletred;
 }
-
-/* MEDIA QUERIES */
-@media only screen
-  and (max-width: 500px){
-    #header{
-      background-color: rgb(71, 204, 175);
-      font-size: 20px;
-
-@media only screen 
-  and (max-width: 480px) {
-    html {
-      font-size: 12px;
-    }
-  
